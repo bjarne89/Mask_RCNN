@@ -74,11 +74,6 @@ class BalloonConfig(Config):
     # Skip detections with < 90% confidence
     DETECTION_MIN_CONFIDENCE = 0.9
 
-    # If enabled, resizes instance masks to a smaller size to reduce
-    # memory load. Recommended when using high-resolution images.
-    #USE_MINI_MASK = True
-    MINI_MASK_SHAPE = (128, 128)  # (height, width) of the mini-mask
-
     # Maximum number of ground truth instances to use in one image
     MAX_GT_INSTANCES = 10
 
